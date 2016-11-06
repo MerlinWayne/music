@@ -4,6 +4,7 @@ public class album {
 	private long id;
 	private int recNummer;
 	private song s;
+	private interpreter inter;
 	
 	public album(String t, long i, int rn){
 		this.title = t;
@@ -25,6 +26,10 @@ public class album {
 	
 	public song getSong(){
 		return s;
+	}
+	
+	public interpreter getInterpreter(){
+		return inter;
 	}
 
 }
