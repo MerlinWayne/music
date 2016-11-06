@@ -3,6 +3,7 @@ public class album {
 	private String title;
 	private long id;
 	private int recNummer;
+	private song s;
 	
 	public album(String t, long i, int rn){
 		this.title = t;
@@ -20,6 +21,10 @@ public class album {
 	
 	public int getRecNummer(String title){
 		return recNummer;
+	}
+	
+	public song getSong(){
+		return s;
 	}
 
 }

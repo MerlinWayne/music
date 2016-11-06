@@ -6,7 +6,7 @@ public class group {
 	private Date datum;
 	private double aktivZeit;	
 //	shouldnt the arrow show in the other direction in the picture?
-	private musician[] m;
+	private musician m;
 	
 	public group(String n, Date d, double az){
 		this.name = n;
@@ -27,7 +27,7 @@ public class group {
 		return aktivZeit;
 	}
 	
-	public musician[] getMusiciansList(){
+	public musician getMusician(){
 		return m;
 	}
 	
