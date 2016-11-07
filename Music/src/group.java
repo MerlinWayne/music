@@ -14,7 +14,7 @@ public class group {
 		this.aktivZeit = az;
 	}
 	
-	//best to have an input here to retuen name
+	//best to have an input here to return name
 	public String getName(){
 		return name;
 	}
