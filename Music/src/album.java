@@ -1,12 +1,14 @@
+import java.util.ArrayList;
+import java.util.Date;
 
 public class album {
 	private String title;
 	private long id;
-	private int recNummer;
-	private song s;
+	private String recNummer;
+	private ArrayList<song> songList = new ArrayList<song>();
 	private interpreter inter;
 	
-	public album(String t, long i, int rn){
+	public album(String t, long i, String rn){
 		this.title = t;
 		this.id = i;
 		this.recNummer = rn;
@@ -20,16 +22,23 @@ public class album {
 		return id;
 	}
 	
-	public int getRecNummer(String title){
+	public String getRecNummer(){
 		return recNummer;
 	}
 	
-	public song getSong(){
-		return s;
+	public ArrayList<song> getSong(){
+		return songList;
+//		System.out.println(song.getName());
 	}
 	
 	public interpreter getInterpreter(){
 		return inter;
 	}
-
+	
+	public void setSong(String n, Date d, double sd, String m){
+		song song = new song(n, d, sd, m);
+		songList.add(song);		
+	}
+	
+	
 }

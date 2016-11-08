@@ -5,11 +5,13 @@ public class song {
 	private Date datum;
 	private double spieldauer;
 	private String musiker;
+	private String name;
 	
-	public song(Date d, double sd, String m){
+	public song(String n, Date d, double sd, String m){
 		this.datum = d;
 		this.spieldauer = sd;
 		this.musiker = m;
+		this.name =n;
 	}
 	
 	public Date getDatum(){
@@ -22,6 +24,10 @@ public class song {
 	
 	public String getMusiker(){
 		return musiker;
+	}
+	
+	public String getName(){
+		return name;
 	}
 
 }
