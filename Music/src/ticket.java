@@ -1,17 +1,17 @@
 
 public class ticket {
 	
-	private long id;
+	private String id;
 	private int seat;
-	private int row;
+	private String row;
 	
-	public ticket(long i, int s, int r){
+	public ticket(String i, int s, String r){
 		this.id = i;
 		this.seat = s;
 		this.row = r;
 	}
 	
-	public long getId(){
+	public String getId(){
 		return id;
 	}
 	
@@ -19,7 +19,7 @@ public class ticket {
 		return seat;
 	}
 	
-	public int getRow(){
+	public String getRow(){
 		return row;
 	}
 	

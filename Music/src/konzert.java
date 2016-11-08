@@ -1,10 +1,11 @@
 import java.sql.Time;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class konzert {
 	
 	
-	private ticket[] tickets;
+	private ArrayList<ticket> tickets = new ArrayList<ticket>();
 	private String name;
 	private Date datum;
 	private Time time;
@@ -27,14 +28,13 @@ public class konzert {
 		return time;
 	}
 	
-	public ticket[] getTickets(){
+	public ArrayList<ticket> getTickets(){
 		return tickets;
 	}
 	
-	public void getTicketsList(konzert[] k){
-		for(int i = 0; i < k.length; i++){
-			System.out.println(k[i]);
-		}
+	public void setTickets(String i, int s, String r){
+		ticket ticket = new ticket(i, s, r);
+		tickets.add(ticket);
 	}
 	
 	

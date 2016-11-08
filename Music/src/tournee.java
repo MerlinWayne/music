@@ -1,8 +1,11 @@
+import java.sql.Time;
+import java.util.ArrayList;
+import java.util.Date;
 
 public class tournee {
 	
 	private String name;
-	private konzert[] concerts;
+	private ArrayList<konzert> konzerte = new ArrayList<konzert>();
 	private interpreter inter;
 	
 	public tournee (String n){
@@ -13,14 +16,12 @@ public class tournee {
 		return name;
 	}
 	
-	public konzert[] getConserts(){
-		return concerts;
+	public ArrayList<konzert> getKonzerte(){
+		return konzerte;
 	}
 	
-	public void getConcertsList(konzert[] c){
-		for(int i=0; i < c.length; i++){
-			System.out.println(c[i]);
-		}
+	public void setKonzerte(konzert k){
+		konzerte.add(k);
 	}
 	
 	public interpreter getInterpreter(){

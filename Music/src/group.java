@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 public class group {
@@ -6,7 +7,7 @@ public class group {
 	private Date datum;
 	private double aktivZeit;	
 //	shouldnt the arrow show in the other direction in the picture?
-	private musician m;
+	private ArrayList<musician> musicians = new ArrayList<musician>();
 	
 	public group(String n, Date d, double az){
 		this.name = n;
@@ -27,14 +28,14 @@ public class group {
 		return aktivZeit;
 	}
 	
-	public musician getMusician(){
-		return m;
+	public void setMusicians(String n, String v, Date gd){
+		musician musician = new musician(n, v, gd);
+		musicians.add(musician);
 	}
 	
-	public void getMusicians(musician[] mc){
-		for(int i=0 ; i < mc.length; i++){
-			System.out.println(mc[i]);
-		}
+	public ArrayList<musician> getMusicians(){
+		return musicians;
+		
 	}
 
 }
