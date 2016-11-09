@@ -9,10 +9,15 @@ public class group {
 //	shouldnt the arrow show in the other direction in the picture?
 	private ArrayList<musician> musicians = new ArrayList<musician>();
 	
-	public group(String n, Date d, double az){
+	public group(String n, Date d, double az, ArrayList<musician> musician){
 		this.name = n;
 		this.datum = d;
 		this.aktivZeit = az;
+		if(musician.size() < 2){
+			throw new MyException("sructure harmed !");			
+		} else {
+			this.musicians = musician;
+		}
 	}
 	
 	//best to have an input here to return name
@@ -26,10 +31,6 @@ public class group {
 	
 	public double getAktivZeit(){
 		return aktivZeit;
-	}
-	
-	public void setMusicians(musician musician){
-		musicians.add(musician);
 	}
 	
 	public ArrayList<musician> getMusicians(){
