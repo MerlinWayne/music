@@ -32,8 +32,7 @@ public class konzert {
 		return tickets;
 	}
 	
-	public void setTickets(String i, int s, String r){
-		ticket ticket = new ticket(i, s, r);
+	public void setTickets(ticket ticket){
 		tickets.add(ticket);
 	}
 	

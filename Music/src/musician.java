@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Date;
 
 public class musician {
@@ -5,6 +6,7 @@ public class musician {
 	String name;
 	String vorname;
 	Date gebDatum;
+	private ArrayList<song> songList = new ArrayList<song>();
 	
 	public musician(String n, String v, Date gd){
 		
@@ -25,6 +27,14 @@ public class musician {
 	
 	public Date getGebDatum(String name){
 		return gebDatum;
+	}
+	
+	public void setSong(song song){
+		songList.add(song);		
+	}
+	
+	public ArrayList<song> getSong(){
+		return songList;
 	}
 
 }

@@ -28,8 +28,7 @@ public class group {
 		return aktivZeit;
 	}
 	
-	public void setMusicians(String n, String v, Date gd){
-		musician musician = new musician(n, v, gd);
+	public void setMusicians(musician musician){
 		musicians.add(musician);
 	}
 	

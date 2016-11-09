@@ -10,7 +10,8 @@ public class main {
 		konzert konzert = new konzert("Elton John", date, null);
 		tournee t = new tournee("t");
 		t.setKonzerte(konzert);
-		konzert.setTickets("RM883", 245, "GD");
+		ticket ticket = new ticket("RM883", 245, "GD");
+		konzert.setTickets(ticket);
 		
 		
 		System.out.println(A7X.getName());
