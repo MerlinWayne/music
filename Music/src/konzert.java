@@ -10,10 +10,11 @@ public class konzert {
 	private Date datum;
 	private Time time;
 	
-	public konzert(String n, Date d, Time t) {
+	public konzert(String n, Date d, Time t, ArrayList<ticket> tickets) {
 		this.name =n;
 		this.datum = d;
 		this.time = t;
+		this.tickets = tickets;  //the amount of tickets does't count, there should be at least one > no exception required!
 		}
 	
 	public String getName(){
