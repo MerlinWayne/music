@@ -20,11 +20,11 @@ public class group {
 		return name;
 	}
 	
-	public Date getDate(String name){
+	public Date getDate(){
 		return datum;
 	}
 	
-	public double getAktivZeit(String name){
+	public double getAktivZeit(){
 		return aktivZeit;
 	}
 	

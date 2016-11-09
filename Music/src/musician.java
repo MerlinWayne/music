@@ -21,11 +21,11 @@ public class musician {
 		return name;
 	}
 	
-	public String getVorname(String name){
+	public String getVorname(){ 
 		return vorname;
 	}
 	
-	public Date getGebDatum(String name){
+	public Date getGebDatum(){
 		return gebDatum;
 	}
 	

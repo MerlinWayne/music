@@ -18,7 +18,7 @@ public class album {
 		return title;
 	}
 	
-	public long getId(String title){
+	public long getId(){
 		return id;
 	}
 	

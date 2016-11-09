@@ -8,8 +8,9 @@ public class tournee {
 	private ArrayList<konzert> konzerte = new ArrayList<konzert>();
 	private interpreter inter;
 	
-	public tournee (String n){
+	public tournee (String n, ArrayList<konzert> concerts){
 		this.name = n;
+		this.konzerte = concerts;
 	}
 	
 	public String getName(){
@@ -20,9 +21,9 @@ public class tournee {
 		return konzerte;
 	}
 	
-	public void setKonzerte(konzert k){
-		konzerte.add(k);
-	}
+//	public void setKonzerte(konzert k){
+//		konzerte.add(k);
+//	}
 	
 	public interpreter getInterpreter(){
 		return inter;
