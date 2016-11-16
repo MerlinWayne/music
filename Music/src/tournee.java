@@ -10,7 +10,11 @@ public class tournee {
 	
 	public tournee (String n, ArrayList<konzert> concerts){
 		this.name = n;
-		this.konzerte = concerts;
+		if(konzerte.size() < 2){
+			throw new MyException("sructure harmed !");			
+		} else {
+			this.konzerte = concerts;
+		}
 	}
 	
 	public String getName(){
